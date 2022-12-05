@@ -6,7 +6,12 @@ GitHub Pages bieten eine gute Möglichkeit, einfach und unkompliziert Dokumentat
 
 ## Konfiguration des Standards
 
+1. Zuerst begeben wir uns auf die Startseite des Repositories, das wir mit einer GitHub Page versehen wollen und klicken auf **Settings**
+
 ![](/doc/img/1-repopage.png)
+
+2.
+
 ![](/doc/img/2-create-branch.png)
 ![](/doc/img/3-settings.png)
 ![](/doc/img/4-set-branch.png)
