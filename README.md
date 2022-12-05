@@ -23,5 +23,3 @@ GitHub Pages bieten eine gute Möglichkeit, einfach und unkompliziert Dokumentat
 ![](/doc/img/8-get-url.png)
 
 ## Editieren des Standards
-
-<input type="text" id="name" name="name"/>
