@@ -6,4 +6,11 @@ GitHub Pages bieten eine gute Möglichkeit, einfach und unkompliziert Dokumentat
 
 ## Konfiguration des Standards
 
+![](/doc/img/1-repopage.png)
+![](/doc/img/2-create-branch.png)
+![](/doc/img/3-settings.png)
+![](/doc/img/4-set-branch.png)
+![](/doc/img/5-get-url.png)
+![](/doc/img/6-gh-actions.png)
+
 ## Editieren des Standards
