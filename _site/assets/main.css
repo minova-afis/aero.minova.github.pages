@@ -44,7 +44,7 @@ header > .lower-header {
 .main {
   width: 100%;
   background-color: white;
-  background-image: url("/assets/ghp-background.jpg");
+  background-image: url("../assets/ghp-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
