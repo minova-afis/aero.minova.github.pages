@@ -4,20 +4,7 @@
 
   <body>
     {%- include header.html -%}
-    <main class="page-content" aria-label="Content">
-      <div class="grid">
-        <div class="col">
-          <img
-            style="display: none"
-            alt="minova-logo"
-            src="{{site.baseurl}}/docs/assets/images/minova-o.png"
-          />
-        </div>
-        <div class="col content">{{ content }}</div>
-      </div>
-
-      <div class="wrapper"></div>
-    </main>
+    <div class="main"><div class="content">{{content}}</div></div>
     <footer></footer>
   </body>
 </html>
