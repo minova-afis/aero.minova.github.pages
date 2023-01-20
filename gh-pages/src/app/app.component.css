@@ -90,3 +90,8 @@ footer {
   left: 0;
   right: 0;
 }
+
+.variable-binding {
+  display: block;
+  float: right;
+}
