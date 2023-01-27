@@ -33,7 +33,7 @@ svg {
   flex-direction: column;
   display: flex;
   height: 100%;
-  background-image: url("/assets/ghp-background.jpg");
+  background-image: url("../assets/ghp-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -51,7 +51,7 @@ svg {
 .logo {
   height: 100%;
   width: 60%;
-  background-image: url("/assets/minova_logo.png");
+  background-image: url("../assets/minova_logo.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
