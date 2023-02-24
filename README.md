@@ -18,7 +18,7 @@ GitHub Pages bieten eine gute Möglichkeit, einfach und unkompliziert Dokumentat
 
 3. In der Ansicht für die Branches erstellen wir per Klick auf den Button **New branch** einen neuen und nennen diesen **gh-pages**.
 
-![](doc/img/3-create-branch.png)
+![](/doc/img/3-create-branch.png)
 
 4. Zurück in der Hauptübersicht des Repositories klicken wir nun auf **Settings**.
 

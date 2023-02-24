@@ -54,3 +54,5 @@ theme: minima
 #   - vendor/gems/
 #   - vendor/ruby/
 destination: public
+feed:
+  disable: true
