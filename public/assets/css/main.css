@@ -1,0 +1,108 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html,
+body {
+  margin: 0;
+}
+
+header {
+  position: relative;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  background-color: #4e4c4f;
+  color: white;
+}
+
+.toolbar {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+svg {
+  height: 100%;
+  width: auto;
+}
+
+.bg-image {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  background-image: url("../ghp-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.logo {
+  height: 100%;
+  width: 60%;
+  background-image: url("/assets/minova_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content-container {
+  position: relative;
+  bottom: 0;
+  height: calc(100% - 100px);
+  overflow-y: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: centers;
+}
+.content {
+  padding: 4rem;
+  font-size: xx-large;
+  height: fit-content;
+  display: f;
+  margin: auto;
+  width: 70vw;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.content > p {
+  width: 60%;
+}
+
+footer {
+  position: fixed;
+  height: 50px;
+  background-color: #4e4c4f;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.variable-binding {
+  display: block;
+  float: right;
+}
+
+.page-heading,
+.post-list-heading,
+.post-list,
+.rss-subscribe {
+  display: none;
+}
