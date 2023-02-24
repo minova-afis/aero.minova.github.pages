@@ -8,17 +8,17 @@ GitHub Pages bieten eine gute Möglichkeit, einfach und unkompliziert Dokumentat
 
 1. Zuerst begeben wir uns auf die Startseite des Repositories, das wir mit einer GitHub Page versehen wollen und klicken auf **Settings**
 
-![](/doc/img/1-repopage.png)
+![](/docs/img/1-repopage.png)
 
 2.
 
-![](/doc/img/2-repopage-branches.png)
-![](/doc/img/3-create-branch.png)
-![](/doc/img/4-repopage-settings.png)
-![](/doc/img/5-settings.png)
-![](/doc/img/6-set-branch.png)
-![](/doc/img/7-gh-actions.png)
-![](/doc/img/8-get-url.png)
+![](/docs/img/2-repopage-branches.png)
+![](/docs/img/3-create-branch.png)
+![](/docs/img/4-repopage-settings.png)
+![](/docs/img/5-settings.png)
+![](/docs/img/6-set-branch.png)
+![](/docs/img/7-gh-actions.png)
+![](/docs/img/8-get-url.png)
 
 ## Editieren des Standards
 
