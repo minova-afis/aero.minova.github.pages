@@ -14,7 +14,7 @@ GitHub Pages bieten eine gute Möglichkeit, einfach und unkompliziert Dokumentat
 
 2. Es empfiehlt sich, die Dateien für die GitHub Page auf einen separaten Branch auszulagern. Hierzu klickenwir auf das Fork-Symbol mit der Anzahl der Branches.
 
-![](/doc/img/2-repopage-branches.png)
+![](./doc/img/2-repopage-branches.png)
 
 3. In der Ansicht für die Branches erstellen wir per Klick auf den Button **New branch** einen neuen und nennen diesen **gh-pages**.
 
