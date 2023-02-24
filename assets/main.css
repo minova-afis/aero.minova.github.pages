@@ -1,83 +1,98 @@
-html,
-body {
-  width: 100vw;
-  padding: 0;
-  margin: 0;
-}
-h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 0;
-  padding: 0;
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  background-color: transparent;
-}
-header > .upper-header {
-  width: 100%;
-  margin: auto;
-  background-color: #454345;
-  height: 5vh;
+  position: relative;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  background-color: #4e4c4f;
+  color: white;
 }
 
-header > .lower-header {
+.toolbar {
+  display: flex;
   width: 100%;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.9);
+  height: 100%;
+  justify-content: space-between;
+}
+svg {
+  height: 100%;
+  width: auto;
 }
 
-.lower-header > .minova-logo-container {
-  width: 70%;
-  margin: auto;
-  padding: 2.5vh 0 2.5vh 0;
-}
-
-.minova-logo-container > .minova-logo {
-  max-height: 5vh;
-}
-
-.main {
-  width: 100%;
-  background-color: white;
+.bg-image {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
   background-image: url("../assets/ghp-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
 }
-.main > .content {
-  width: 70%;
+.logo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.logo {
+  height: 100%;
+  width: 60%;
+  background-image: url("../assets/minova_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content-container {
+  position: relative;
+  bottom: 0;
+  height: calc(100% - 100px);
+  overflow-y: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: centers;
+}
+.content {
+  padding: 4rem;
+  font-size: xx-large;
+  height: fit-content;
+  display: f;
   margin: auto;
-  background: white;
-  padding: 5vh;
+  width: 70vw;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.content > p {
+  width: 60%;
 }
 
 footer {
-  background-color: #454345 !important;
-  width: 100%;
-  height: 5vh;
-  margin-top: 50px;
   position: fixed;
+  height: 50px;
+  background-color: #4e4c4f;
+  width: 100vw;
   bottom: 0;
   left: 0;
   right: 0;
 }
 
-#aerominovagithubpages,
-.post-list-heading,
-.post-list,
-.post-title,
-.page-heading,
-.site-nav,
-.site-title {
-  display: none;
-}
-
-img {
-  max-width: 70vw;
+.variable-binding {
+  width: 100%;
+  display: block;
+  float: right;
 }
