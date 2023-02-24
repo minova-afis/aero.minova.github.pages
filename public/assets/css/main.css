@@ -55,7 +55,7 @@ svg {
 .logo {
   height: 100%;
   width: 60%;
-  background-image: url("/assets/minova_logo.png");
+  background-image: url("../minova_logo.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
