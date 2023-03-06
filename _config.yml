@@ -12,4 +12,5 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-relative-links
 #- jekyll-remote-theme # add this line to the plugins list if you already have one
