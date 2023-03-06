@@ -36,6 +36,8 @@ svg {
   position: relative;
   flex-direction: column;
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   background-image: url("../ghp-background.jpg");
   background-size: cover;
