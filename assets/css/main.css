@@ -36,8 +36,7 @@ svg {
   position: relative;
   flex-direction: column;
   display: flex;
-  justify-content: center;
-  align-items: center;
+
   height: 100%;
   background-image: url("../ghp-background.jpg");
   background-size: cover;
@@ -52,10 +51,7 @@ svg {
   position: relative;
 }
 .logo-container {
-  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 70vw;
   height: 80px;
   padding: 16px;
@@ -63,11 +59,11 @@ svg {
 }
 
 .logo {
-  height: 100%;
   width: 100%;
   background-image: url("../minova_logo.png");
   background-size: contain;
   background-repeat: no-repeat;
+  margin: 16px;
 }
 .content-container {
   position: relative;
@@ -80,10 +76,7 @@ svg {
   align-items: centers;
 }
 .content {
-  padding: 4rem;
   font-size: xx-large;
-  height: fit-content;
-  display: f;
   margin: auto;
   width: 70vw;
   flex-direction: column;
@@ -115,4 +108,8 @@ footer {
 .post-list,
 .rss-subscribe {
   display: none;
+}
+
+.home {
+  margin: 16px;
 }
