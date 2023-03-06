@@ -1,24 +1,27 @@
-<head>
-  <link rel="stylesheet" href="./assets/css/main.css" />
-</head>
-<header>
-  <div class="toolbar" role="banner">
-    <div></div>
-  </div>
-</header>
-<div class="bg-image">
-  <div class="logo-wrapper">
-    <div class="logo-container">
-      <div class="logo"></div>
+<!DOCTYPE html>
+<html>
+  <head lang='{{ page.lang | default: site.lang | default: "en" }}'>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <header>
+    <div class="toolbar" role="banner">
+      <div></div>
     </div>
-  </div>
-
-  <div class="content-container">
-    <div class="content" role="main">
-      {{content}}
-
-      <!-- Footer -->
+  </header>
+  <body class="bg-image">
+    <div class="logo-wrapper">
+      <div class="logo-container">
+        <div class="logo"></div>
+      </div>
     </div>
-  </div>
-</div>
-<footer></footer>
+
+    <div class="content-container">
+      <div class="content" role="main">
+        {{content}}
+
+        <!-- Footer -->
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
