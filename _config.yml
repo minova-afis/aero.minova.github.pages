@@ -1,7 +1,5 @@
 title: "MINOVA GitHub Pages"
 
-
-  minima:
+minima:
   custom_head_includes:
     - head-custom.html
-
