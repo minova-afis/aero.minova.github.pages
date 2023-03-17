@@ -7,6 +7,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html,
+body {
+  margin: 0;
+}
 
 header {
   position: relative;
@@ -19,7 +23,7 @@ header {
 
 .toolbar {
   display: flex;
-  width: 100%;
+  width: 600%;
   height: 100%;
   justify-content: space-between;
 }
@@ -32,28 +36,33 @@ svg {
   position: relative;
   flex-direction: column;
   display: flex;
+
   height: 100%;
-  background-image: url("../assets/ghp-background.jpg");
+  background-image: url("../ghp-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.logo-container {
-  position: relative;
+
+.logo-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 50px;
+  justify-content: center;
+  position: relative;
+}
+.logo-container {
+  display: flex;
+  width: 70vw;
+  height: 80px;
   background: rgba(255, 255, 255, 0.95);
 }
 
 .logo {
-  height: 100%;
-  width: 60%;
-  background-image: url("../assets/minova_logo.png");
+  width: 100%;
+  background-image: url("../minova_logo.png");
   background-size: contain;
   background-repeat: no-repeat;
+  margin: 16px;
 }
 .content-container {
   position: relative;
@@ -66,10 +75,7 @@ svg {
   align-items: centers;
 }
 .content {
-  padding: 4rem;
-  font-size: xx-large;
-  height: fit-content;
-  display: f;
+  font-size: x-large;
   margin: auto;
   width: 70vw;
   flex-direction: column;
@@ -92,7 +98,18 @@ footer {
 }
 
 .variable-binding {
-  width: 100%;
   display: block;
   float: right;
+}
+
+.page-heading,
+.post-list-heading,
+.post-list,
+.rss-subscribe {
+  display: none;
+}
+
+.home {
+  margin: 16px;
+  height: 100%;
 }

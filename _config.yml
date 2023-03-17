@@ -1,4 +1,7 @@
-collections:
-  docs:
-    output: true
-    permalink: /docs/:path/
+title: "MINOVA GitHub Pages"
+
+
+  minima:
+  custom_head_includes:
+    - head-custom.html
+
