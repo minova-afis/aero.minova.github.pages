@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head lang='{{ page.lang | default: site.lang | default: "en" }}'>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+  </head>
+
+  <body class="bg-image">
+    <header>
+      <div class="toolbar" role="banner">
+        <div></div>
+      </div>
+    </header>
+    <div class="logo-wrapper">
+      <div class="logo-container">
+        <div class="logo"></div>
+      </div>
+    </div>
+
+    <div class="content-container">
+      <main class="content page-content" role="main">
+        {{content}}
+
+        <!-- Footer -->
+      </main>
+    </div>
+    <footer></footer>
+  </body>
+</html>
