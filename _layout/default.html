@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang='{{ page.lang | default: site.lang | default: "en" }}'>
   {%- include head.html -%}
 
-  <body class="bg-image">
-    <header>
-      <div class="toolbar" role="banner">
-        <div></div>
+  <body>
+    {%- include header.html -%}
+    <main class="page-content" aria-label="Content">
+      <div class="grid">
+        <div class="col">
+          <img
+            style="display: none"
+            alt="minova-logo"
+            src="{{site.baseurl}}/docs/assets/images/minova-o.png"
+          />
+        </div>
+        <div class="col">{{ content }}</div>
       </div>
-    </header>
-    <div class="logo-wrapper">
-      <div class="logo-container">
-        <div class="logo"></div>
-      </div>
-    </div>
 
-    <div class="content-container">
-      <main class="content page-content" role="main">
-        {{content}}
-
-        <!-- Footer -->
-      </main>
-    </div>
+      <div class="wrapper"></div>
+    </main>
     <footer></footer>
   </body>
 </html>
