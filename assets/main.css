@@ -38,7 +38,7 @@ svg {
   display: flex;
 
   height: 100%;
-  background-image: url("../ghp-background.jpg");
+  background-image: url("/assets/ghp-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -59,7 +59,7 @@ svg {
 
 .logo {
   width: 100%;
-  background-image: url("../minova_logo.png");
+  background-image: url("/assets/minova_logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   margin: 16px;
