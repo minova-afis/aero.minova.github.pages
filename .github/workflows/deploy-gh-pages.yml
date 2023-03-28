@@ -20,9 +20,9 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git fetch
-          git switch -c -v gh-pages
+          git switch -c -v 'gh-pages'
           git checkout ${GITHUB_REF##*/} -- $files
           git add -A
           git diff-index --quiet HEAD || git commit -am "deploy files"
-          git push origin gh-pages
+          git push origin 'gh-pages'
           
