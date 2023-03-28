@@ -21,9 +21,8 @@ jobs:
           git config --global user.email 'action@github.com'
           git fetch
           git switch -c 'origin/gh-pages'
-          git switch 'main'
-          git checkout ${GITHUB_REF##*/} -- $files
+          git checkout main -- README.md
+          git checkout main -- doc
           git add -A
-          git diff-index --quiet HEAD || git commit -am "deploy files"
+          git commit -m 'update README.md and /doc'
           git push origin 'gh-pages'
-          
