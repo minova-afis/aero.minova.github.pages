@@ -6,13 +6,22 @@ on:
   pull_request:
   
 jobs:
-  deploy:
+  copy_doc_files_to_ghpages:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
+      - name: Push generated webpage to another repository
+        uses: nkoppel/push-files-to-another-repository@1.1.0
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-files: '_includes/ assets/ .gitignore _config.yml'
+          destination-username: 'minova-afis'
+          destination-repository: 'aero.minova.github.pages'
+          commit-email: 'action@github.com'
       - uses: actions/checkout@v3
       - name: copy
         run: |
