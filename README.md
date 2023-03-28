@@ -1,5 +1,3 @@
-[Landing](doc/landing.md)
-
 # Benutzerhandbuch
 
 Das Benutzerhandbuch enthält eine ausführliche Dokumentation der Handhabung einer Free Tables Anwendung. Sie soll dem Benutzer Hilfestellung bei der Bedienung vom Free Tables geben.
