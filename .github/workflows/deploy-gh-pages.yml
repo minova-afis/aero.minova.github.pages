@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        source_repository: [aero.minova.github.pages]
+        source_repository: [minova-afis/aero.minova.github.pages]
         source_branch: [gh-pages]
         target_branch: [gh-pages]
     permissions:
@@ -23,8 +23,6 @@ jobs:
         with:
           repository: ${{ matrix.source_repository }}
           ref: ${{ matrix.source_branch }}
-          path: source
-          token: ${{ secrets.GITHUB_TOKEN }}
       - name: download files
         run: |
           cp ./_config.yml .
