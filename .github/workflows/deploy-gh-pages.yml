@@ -25,10 +25,10 @@ jobs:
           ref: ${{ matrix.source_branch }}
       - name: download files
         run: |
-          cp ./_config.yml .
-          cp -r ./_includes .
-          cp -r ./assets .
-          cp ./.gitignore
+          cp -f ./_config.yml .
+          cp -rf ./_includes .
+          cp -rf ./assets .
+          cp -f ./.gitignore
       - uses: actions/checkout@v3
       - name: copy
         run: |
