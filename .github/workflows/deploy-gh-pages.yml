@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        source_repository: [https://github.com/minova-afis/aero.minova.github.pages.git]
+        source_repository: [github.com/minova-afis/aero.minova.github.pages.git]
         source_branch: [gh-pages]
         target_branch: [gh-pages]
     permissions:
