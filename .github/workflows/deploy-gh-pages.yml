@@ -21,7 +21,7 @@ jobs:
           git config --global user.email 'action@github.com'
           git fetch
           git switch -c 'origin/gh-pages'
-          git switch 'origin/main'
+          git switch 'main'
           git checkout ${GITHUB_REF##*/} -- $files
           git add -A
           git diff-index --quiet HEAD || git commit -am "deploy files"
