@@ -6,22 +6,29 @@ on:
   pull_request:
   
 jobs:
-  copy_doc_files_to_ghpages:
+  copy_files:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        source_repository: [aero.minova.github.pages]
+        source_branch: [gh-pages]
+        target_branch: [gh-pages]
     permissions:
       contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: Copy files to another repository
-        uses: nkoppel/push-files-to-another-repository@v1.1.1
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      - name: Copy files another repository into the current
+        uses: actions/checkout@v3
         with:
-          source-files: '_includes/ assets/ .gitignore _config.yml'
-          destination-username: 'minova-afis'
-          destination-repository: 'aero.minova.github.pages'
-          commit-email: 'action@github.com'
+          repository: ${{ matrix.source_repository }}
+          ref: ${{ matrix.source_branch }}
+      - name: download files
+        run: |
+          cp ./_config.yml .
+          cp -r ./_includes .
+          cp -r ./assets .
+          cp ./.gitignore
       - uses: actions/checkout@v3
       - name: copy
         run: |
